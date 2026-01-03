@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HelpDesk</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>HelpDesk</h1>
+        <button id="add-ticket-btn">➕ Добавить тикет</button>
+      </header>
+      <main>
+        <div id="tickets-container">
+          <div id="loading" class="hidden">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="24"
+                cy="24"
+                r="20"
+                fill="none"
+                stroke="#007bff"
+                stroke-width="4"
+                stroke-dasharray="31.41592653589793 31.41592653589793"
+                stroke-dashoffset="0"
+              >
+                <animate
+                  attributeName="stroke-dashoffset"
+                  dur="1.5s"
+                  repeatCount="indefinite"
+                  values="0; -62.83185307179586"
+                />
+              </circle>
+            </svg>
+          </div>
+          <div id="tickets-list"></div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
